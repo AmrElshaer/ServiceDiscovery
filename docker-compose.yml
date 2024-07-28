@@ -1,0 +1,27 @@
+services:
+ 
+  order-service-api:
+    image: ${DOCKER_REGISTRY-}order-service-api
+    container_name: Order.Service.Api
+    build:
+      context: .
+      dockerfile: OrderService/Dockerfile
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+   
+  shipping-service-api:
+    image: ${DOCKER_REGISTRY-}shipping-service-api
+    container_name: Shipping.Service.Api
+    build:
+      context: .
+      dockerfile: ShippingService/Dockerfile
+    ports:
+      - "7000:8080"
+      - "7001:8081"
+  consul:
+    image: hashicorp/consul:latest
+    container_name: Ecommerce.Consul
+    ports:
+      - 8500:8500
+
