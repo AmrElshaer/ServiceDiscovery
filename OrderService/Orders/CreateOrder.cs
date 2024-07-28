@@ -17,6 +17,7 @@ namespace OrderService.Orders
                 Order order = new(orderCount+1,request.TotalPrice, request.Address);
                 orderContext.Orders.Add(order);
                 CreateShipping.Request createShippingReq = new(order.Id,order.TotalPrice);
+                // use domain event or integration don't call handler in handler it's bad this for demo purpose
                 await sender.Send(createShippingReq,cancellationToken);
             }
         }
