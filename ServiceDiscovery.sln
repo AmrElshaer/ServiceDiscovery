@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{8B81B53F-857B-42A6-ABD5-07AFB45FC0F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderService", "OrderService\OrderService.csproj", "{8B81B53F-857B-42A6-ABD5-07AFB45FC0F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA1935DC-92E0-444B-8220-7DA9FB23B2C7}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShippingService", "ShippingService\ShippingService.csproj", "{208A3CD6-1F85-424D-9438-8A58BCB14CD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShippingService", "ShippingService\ShippingService.csproj", "{208A3CD6-1F85-424D-9438-8A58BCB14CD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{11CF97E4-80B8-4D69-9DF6-BF618FF86BA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +30,10 @@ Global
 		{208A3CD6-1F85-424D-9438-8A58BCB14CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{208A3CD6-1F85-424D-9438-8A58BCB14CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{208A3CD6-1F85-424D-9438-8A58BCB14CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11CF97E4-80B8-4D69-9DF6-BF618FF86BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11CF97E4-80B8-4D69-9DF6-BF618FF86BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11CF97E4-80B8-4D69-9DF6-BF618FF86BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11CF97E4-80B8-4D69-9DF6-BF618FF86BA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
